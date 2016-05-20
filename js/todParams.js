@@ -1,16 +1,18 @@
-USER = 'gopm'
-CARTODB_JSON_URL = 'https://gopm.cartodb.com/api/v2/viz/20612ffc-9e8b-11e5-80cb-0e3ff518bd15/viz.json'
+USER = 'agustinbenassi'
+CARTODB_JSON_URL = 'https://agustinbenassi.cartodb.com/api/v2/viz/988d485c-1e7a-11e6-8bd9-0e787de82d45/viz.json'
 BBOX = [-58.534235, -34.708906, -58.329524, -34.539576]
 CENTER = [-34.615753, -58.4]
 ZOOM = 12
 
 DEFAULT_SELECTED_INDICATORS = ["hab", "hab_km2", "area_km2", "d_ffcc",
     "d_metrobus", "d_subte", "reach_area", "reach_prop", "desocup",
-    "empleo", "inact", "nse_alt", "nse_mex", "comercial"
+    "empleo", "inact", "nse_alt", "nse_mex", "comercial", "dens_2011",
+    "dens_2012", "dens_2013", "dens_2014", "dens_2015"
 ]
 
 INDICS_HIERARCHY = {
-    "Generales": ["hab", "area_km2", "hab_km2", "hombres", "extranjero"],
+    "Generales": ["hab", "area_km2", "hab_km2", "hombres", "extranjero",
+        "dens_2011", "dens_2012", "dens_2013", "dens_2014", "dens_2015"],
     "Edad": ["_0_14", "_15_64", "mas_65"],
     "Uso del suelo": ["comercial", "residencia", "industrial", "servicios",
         "otros"
@@ -26,11 +28,37 @@ INDICS_HIERARCHY = {
 }
 
 AREA_WEIGHTED = ["hab_km2", "comercial", "residencia", "industrial",
-                 "servicios", "otros"]
+                 "servicios", "otros", "dens_2011", "dens_2012", "dens_2013",
+                 "dens_2014", "dens_2015"]
 
 NON_WEIGHTED = ["hab", "area_km2"]
 
 INDICS = {
+    "dens_2011": {
+        "short": "Densidad poblacional proyectada 2011 (miles hab/km2)",
+        "scale": 1 / 1000,
+        "long": "Densidad poblacional proyectada en 2011 (miles de habitantes por kilómetro cuadrado) - Cálculo a partir de proyección de población de la Dir. Gral. de Estadística y Censos (GCBA)"
+    },
+    "dens_2012": {
+        "short": "Densidad poblacional proyectada 2012 (miles hab/km2)",
+        "scale": 1 / 1000,
+        "long": "Densidad poblacional proyectada en 2012 (miles de habitantes por kilómetro cuadrado) - Cálculo a partir de proyección de población de la Dir. Gral. de Estadística y Censos (GCBA)"
+    },
+    "dens_2013": {
+        "short": "Densidad poblacional proyectada 2013 (miles hab/km2)",
+        "scale": 1 / 1000,
+        "long": "Densidad poblacional proyectada en 2013 (miles de habitantes por kilómetro cuadrado) - Cálculo a partir de proyección de población de la Dir. Gral. de Estadística y Censos (GCBA)"
+    },
+    "dens_2014": {
+        "short": "Densidad poblacional proyectada 2014 (miles hab/km2)",
+        "scale": 1 / 1000,
+        "long": "Densidad poblacional proyectada en 2014 (miles de habitantes por kilómetro cuadrado) - Cálculo a partir de proyección de población de la Dir. Gral. de Estadística y Censos (GCBA)"
+    },
+    "dens_2015": {
+        "short": "Densidad poblacional proyectada 2015 (miles hab/km2)",
+        "scale": 1 / 1000,
+        "long": "Densidad poblacional proyectada en 2015 (miles de habitantes por kilómetro cuadrado) - Cálculo a partir de proyección de población de la Dir. Gral. de Estadística y Censos (GCBA)"
+    },
     "hombres": {
         "short": "Hombres (%)",
         "scale": 100,
