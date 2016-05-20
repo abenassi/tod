@@ -36,27 +36,27 @@ NON_WEIGHTED = ["hab", "area_km2"]
 INDICS = {
     "dens_2011": {
         "short": "Densidad poblacional proyectada 2011 (miles hab/km2)",
-        "scale": 1000,
+        "scale": 1 / 1000,
         "long": "Densidad poblacional proyectada en 2011 (miles de habitantes por kilómetro cuadrado) - Cálculo a partir de proyección de población de la Dir. Gral. de Estadística y Censos (GCBA)"
     },
     "dens_2012": {
         "short": "Densidad poblacional proyectada 2012 (miles hab/km2)",
-        "scale": 1000,
+        "scale": 1 / 1000,
         "long": "Densidad poblacional proyectada en 2012 (miles de habitantes por kilómetro cuadrado) - Cálculo a partir de proyección de población de la Dir. Gral. de Estadística y Censos (GCBA)"
     },
     "dens_2013": {
         "short": "Densidad poblacional proyectada 2013 (miles hab/km2)",
-        "scale": 1000,
+        "scale": 1 / 1000,
         "long": "Densidad poblacional proyectada en 2013 (miles de habitantes por kilómetro cuadrado) - Cálculo a partir de proyección de población de la Dir. Gral. de Estadística y Censos (GCBA)"
     },
     "dens_2014": {
         "short": "Densidad poblacional proyectada 2014 (miles hab/km2)",
-        "scale": 1000,
+        "scale": 1 / 1000,
         "long": "Densidad poblacional proyectada en 2014 (miles de habitantes por kilómetro cuadrado) - Cálculo a partir de proyección de población de la Dir. Gral. de Estadística y Censos (GCBA)"
     },
     "dens_2015": {
         "short": "Densidad poblacional proyectada 2015 (miles hab/km2)",
-        "scale": 1000,
+        "scale": 1 / 1000,
         "long": "Densidad poblacional proyectada en 2015 (miles de habitantes por kilómetro cuadrado) - Cálculo a partir de proyección de población de la Dir. Gral. de Estadística y Censos (GCBA)"
     },
     "hombres": {
