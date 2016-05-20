@@ -132,7 +132,8 @@ def add_indicator(area_level, indic_name, indicator):
 def add_dbf_indicator_by_id(area_level, context_shp_name, context_id_field,
                             context_indic_field):
     indicators = get_or_create_indicators_df(area_level)
-    indicators.drop(context_indic_field, 1, inplace=True)
+    if context_indic_field in indicators.columns:
+        indicators.drop(context_indic_field, 1, inplace=True)
 
     dbf = Dbf5(get_context_shp_path(context_shp_name) + ".dbf")
     context_df = dbf.to_dataframe()

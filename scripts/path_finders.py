@@ -81,7 +81,7 @@ def get_indic(area_level_or_shp, file_format="csv"):
     """
     if area_level_or_shp in AREA_LEVEL_SHP_NAME:
         if file_format == "csv":
-            filename = get(INDICATORS_DIR) + "_" + area_level_or_shp + "." + \
+            filename = INDICATORS_DIR + "_" + area_level_or_shp + "." + \
                 file_format
             return os.path.join(get(INDICATORS_DIR), filename)
 
