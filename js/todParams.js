@@ -1,17 +1,16 @@
-USER = 'agustinbenassi'
-CARTODB_JSON_URL = 'https://agustinbenassi.cartodb.com/api/v2/viz/877a4438-1e35-11e6-b716-0e3ff518bd15/viz.json'
+USER = 'gopm'
+CARTODB_JSON_URL = 'https://gopm.cartodb.com/api/v2/viz/20612ffc-9e8b-11e5-80cb-0e3ff518bd15/viz.json'
 BBOX = [-58.534235, -34.708906, -58.329524, -34.539576]
 CENTER = [-34.615753, -58.4]
 ZOOM = 12
 
 DEFAULT_SELECTED_INDICATORS = ["hab", "hab_km2", "area_km2", "d_ffcc",
     "d_metrobus", "d_subte", "reach_area", "reach_prop", "desocup",
-    "empleo", "inact", "nse_alt", "nse_mex", "comercial", "pobla_15"
+    "empleo", "inact", "nse_alt", "nse_mex", "comercial"
 ]
 
 INDICS_HIERARCHY = {
-    "Generales": ["hab", "area_km2", "hab_km2", "hombres", "extranjero",
-        "pobla_15"],
+    "Generales": ["hab", "area_km2", "hab_km2", "hombres", "extranjero"],
     "Edad": ["_0_14", "_15_64", "mas_65"],
     "Uso del suelo": ["comercial", "residencia", "industrial", "servicios",
         "otros"
@@ -29,14 +28,9 @@ INDICS_HIERARCHY = {
 AREA_WEIGHTED = ["hab_km2", "comercial", "residencia", "industrial",
                  "servicios", "otros"]
 
-NON_WEIGHTED = ["hab", "area_km2", "pobla_15"]
+NON_WEIGHTED = ["hab", "area_km2"]
 
 INDICS = {
-    "pobla_15": {
-        "short": "Proyección Pobl. 2015 (hab)",
-        "scale": 1,
-        "long": "Proyección de la población por radio censal, a 2015 (hab) - Dirección General de Estadística y Censos (GCBA)"
-    },
     "hombres": {
         "short": "Hombres (%)",
         "scale": 100,
